@@ -1,0 +1,113 @@
+.header_main {
+    background: $white;
+    height: 58px;
+    &-in {
+        border-bottom: 1px solid $gainsboro;
+        height: 58px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        background: white;
+        &-burger {
+            background: $burger no-repeat center;
+            width: 20px;
+            height: 15px;
+            position: absolute;
+            top: 50%;
+            left: 18px;
+            transform: translate(0,-50%);
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            color: $black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            white-space: nowrap;
+        }
+        &-back {
+            background: $back no-repeat center;
+            width: 20px;
+            height: 15px;
+            position: absolute;
+            top: 50%;
+            left: 18px;
+            transform: translate(0,-50%);
+        }
+        &-logo {
+            background: $logo no-repeat center;
+            width: 120px;
+            height: 26px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+        }
+        &-trash {
+            background: $trash no-repeat center;
+            width: 20px;
+            height: 22px;
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+        &-search {
+            background: $search no-repeat center;
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    }
+    &-submenu {
+        height: 70px;
+        background: #FAFAFA;
+        border-bottom: 1px solid #EDECEE;
+        overflow: auto;
+        overflow-x: hidden;
+        & > div {
+            display: inline-flex;
+            height: 70px;
+        }
+        &-item {
+            height: 38px;
+            background: white;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+            margin: 15px 0 0 9px;
+            border-radius: 30px;
+            position: relative;
+            padding: 0 15px 0 15px;
+            border: none;
+        }
+        &-item:first-child {
+            margin-left: 16px;
+            min-width: 46px;
+        }
+        &-settings {
+            &:before, &:after {
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 8px;
+                left: 50%;
+                transform: translate(-50%,0);
+                top: 11px;
+            }
+            &:before {
+                background: $vector no-repeat center;
+            }
+            &:after {
+                background: $vector_1 no-repeat center;
+                top: 19px;
+            }
+        }
+    }
+}

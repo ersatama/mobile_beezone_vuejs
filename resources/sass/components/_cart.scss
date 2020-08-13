@@ -1,0 +1,142 @@
+.body_cart {
+    position: relative;
+    background: $grey;
+    padding: 13px 0 0 0;
+    padding-bottom: 16px;
+    &_offer {
+        position: relative;
+    }
+    &_sum {
+        height: 78px;
+        position: relative;
+        z-index: 2;
+        &_title {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+        &_sum {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    }
+    &_total {
+        height: 78px;
+        background: $white;
+        position: relative;
+        &_wave {
+            background: $wave no-repeat bottom;
+            height: 52px;
+            background-position: 0 -4px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+        }
+    }
+    &_list {
+        margin: 20px 0 0 0;
+        background: $white;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+        &_item {
+            height: 48px;
+            border-bottom: 1px solid $gainsboro;
+            position: relative;
+            display: grid;
+            grid-template-columns: 270px auto;
+            grid-gap: 10px;
+            font-size: 14px;
+            line-height: 18px;
+            &_title {
+                width: 270px;
+                padding: 15px 0 0 15px;
+            }
+            &_price {
+                text-align: right;
+                padding: 15px 15px 0 0;
+                color: $blurgrey;
+            }
+        }
+    }
+    &_main {
+        height: 740px;
+        &_icon {
+            width: 100px;
+            height: 90px;
+            margin: 138px auto 0 auto;
+            display: table;
+            background: $cart;
+        }
+        &_title {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            color: $black;
+            margin: 80px auto 0 auto;
+            text-align: center;
+        }
+        &_desc {
+            font-size: 15px;
+            line-height: 20px;
+            text-align: center;
+            color: $blurgrey;
+            margin: 14px auto 0 auto;
+            width: 288px;
+        }
+    }
+    &_time {
+        min-height: 70px;
+        background: $white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px 0 0 0;
+        position: relative;
+        &_deliver {
+            width: 44px;
+            height: 43px;
+            background: $deliver no-repeat center;
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translate(0,-50%);
+            &_truck {
+                height: 20px;
+                width: 20px;
+                background: $truck no-repeat center;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+        }
+        &_title {
+            font-size: 14px;
+            line-height: 18px;
+            color: $black;
+            position: absolute;
+            left: 70px;
+            right: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+
+    }
+    &_address {
+        min-height: 70px;
+        background: $white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin: 8px 0 0 0;
+        position: relative;
+        display: grid;
+        padding: 0 0 20px 0;
+    }
+}

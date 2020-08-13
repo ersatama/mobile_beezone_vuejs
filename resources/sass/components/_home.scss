@@ -1,0 +1,137 @@
+.body_main {
+    position: relative;
+    background: $grey;
+    padding: 13px 0 0 0;
+    padding-bottom: 16px;
+    &-list {
+        margin-top: 16px;
+        overflow: auto;
+        overflow-y: hidden;
+        padding: 5px 0 5px 0;
+        & > div {
+            display: inline-flex;
+        }
+        &-item {
+            width: 120px;
+            height: 210px;
+            background: $white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+            position: relative;
+            margin: 0 0 0 10px;
+            &-icon {
+                width: 100px;
+                height: 100px;
+                margin: 10px 0 0 10px;
+                border-right: 5px;
+            }
+            &-title {
+                font-size: 11px;
+                line-height: 14px;
+                text-align: center;
+                margin: 8px 8px 0 8px;
+            }
+            &-count {
+                font-size: 9px;
+                line-height: 12px;
+                text-align: center;
+                color: #BDC0C2;
+                margin-top: 2px;
+            }
+            &-btn {
+                background: #F1F0EC;
+                border-radius: 5px;
+                bottom: 13px;
+                right: 13px;
+                left: 13px;
+                position: absolute;
+                font-size: 15px;
+                text-align: center;
+                padding: 5px 0 5px 0;
+                font-weight: bold;
+            }
+        }
+        &-item:first-child {
+            margin-left: 19px;
+        }
+        &-item:last-child {
+            margin-right: 19px;
+        }
+    }
+    &-title, &-next {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        color: $black;
+        margin: 0 0 0 27px;
+    }
+    &-next {
+        margin-top: 19px;
+    }
+    &-share {
+        margin: 11px 0 0 0;
+        overflow: auto;
+        overflow-y: hidden;
+        & > div {
+            display: inline-flex;
+        }
+        &-item {
+            width: 180px;
+            height: 180px;
+            margin-left: 8px;
+            background: no-repeat center;
+        }
+        &-item:first-child {
+            margin-left: 19px;
+        }
+        &-item:last-child {
+            margin-right: 19px;
+        }
+    }
+}
+.footer_main {
+    height: 68px;
+    & > div {
+        height: 68px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $white;
+        border-top: 1px solid $gainsboro;
+        & > a {
+            color: inherit;
+        }
+    }
+    &-btn {
+        height: 50px;
+        position: absolute;
+        background: $yellow;
+        top: 9px;
+        left: 9px;
+        bottom: 9px;
+        right: 9px;
+        border-radius: 3px;
+        &-title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        &-price {
+            background:  $darkyellow;
+            position: absolute;
+            right: 21px;
+            padding: 2px;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    }
+}
